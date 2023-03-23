@@ -1,0 +1,272 @@
+body {
+  background-color: rgb(190, 186, 186, 0.3);
+  font-family: "Poppins", sans-serif;
+}
+
+.MainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 99.5vw;
+}
+
+.IconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+  margin-bottom: 1.3rem;
+  background: #fff;
+  color: rgb(70, 70, 70);
+  padding: 0.1rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.ZoomDropdown {
+  font-size: 0.9rem;
+  width: 4.5rem;
+  height: 2.8rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  padding-left: 0.2rem;
+}
+
+.ZoomDropdown:hover {
+  background-color: rgb(234, 234, 234);
+  border-radius: 5px;
+}
+
+.ZoomDropdown:focus {
+  outline: none;
+}
+
+.ZoomOption {
+  background-color: white;
+}
+
+.MappedIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.MappedIcons:hover {
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+}
+
+.TextSizeIconsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.TextIncreaseIcon,
+.TextDecreaseIcon {
+  cursor: pointer;
+  margin-left: 0.2rem;
+  padding: 0.6rem;
+}
+
+.TextIncreaseIcon:hover,
+.TextDecreaseIcon:hover {
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+}
+
+.TextColorInputBox {
+  padding-left: 2rem;
+  background-image: url("https://static.thenounproject.com/png/2075442-200.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 17px;
+  border: 0.5px solid gainsboro;
+  background-color: whitesmoke;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.TextColorInputBox:hover {
+  background-color: rgb(241, 239, 239);
+}
+
+.TextFillInputBox {
+  padding-left: 2rem;
+  background-image: url("http://cdn.onlinewebfonts.com/svg/img_16290.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 18px;
+  border: 0.5px solid gainsboro;
+  background-color: whitesmoke;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+}
+
+.TextFillInputBox:hover {
+  background-color: rgb(241, 239, 239);
+}
+
+.ImageContainer {
+  height: 20rem;
+  width: auto;
+}
+
+.ImageIcon {
+  cursor: pointer;
+  padding: 0.6rem;
+}
+
+.ImageIcon:hover {
+  background-color: rgb(241, 239, 239);
+  border-radius: 5px;
+}
+
+.UploadedImageStyling {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.TextSheetContainer {
+  height: 100%;
+}
+
+.TextSheet {
+  text-align: left;
+  border: 5px solid white;
+  height: 62.563rem;
+  width: 43.75rem;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.TextSheet:focus {
+  outline: none;
+}
+
+.DownloadIconContainer {
+  display: flex;
+  padding: 1.5rem;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.DownloadIconContainer:hover {
+  background-color: #1f75ff;
+}
+
+.DownloadIcon {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 415px) {
+  .IconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    max-height: 90vh;
+    width: auto;
+    z-index: 1;
+    overflow-y: auto;
+    position: fixed;
+    left: 20.6rem;
+    top: 4.2rem;
+  }
+
+  .IconContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .IconContainer::-webkit-scrollbar-thumb {
+    background-color: #d4d4d4;
+    border-radius: 10px;
+  }
+
+  .MainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .DownloadIconContainer {
+    position: fixed;
+    bottom: 35px;
+    left: 35px;
+    width: 1.5rem;
+  }
+
+  .TextSizeIconsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .TextSheetContainer {
+    height: 100%;
+  }
+
+  .TextSheet {
+    text-align: left;
+    border: 5px solid white;
+    height: 62.563rem;
+    width: 18.75rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    padding: 4rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .ZoomDropdown {
+    font-size: 0.9rem;
+    width: 4rem;
+    height: 2.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding-left: 0.2rem;
+  }
+
+  .TextColorInputBox {
+    margin-right: 0.5rem;
+  }
+  .TextFillInputBox {
+    margin-right: 0rem;
+  }
+}
